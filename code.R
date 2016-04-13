@@ -3,9 +3,9 @@ library(alr3)          # Applied Linear Regression Package 3rd Edition
 all=read.table("/alr3data/All.txt",sep="\t",header=T)     # Read table from file
 # Divide Table into groups
 all2=subset(all,Soil.Type=="A-2-4")         # A-2-4 Soils                   
-all3=subset(all,Soil.Type=="A-3")            # A-3 Soils
+all3=subset(all,Soil.Type=="A-3")           # A-3 Soils
 
-# Analysis on A-3 Soils. A-2-4 Soils are similar
+# Analysis on A-3 Soils. A-2-4 Soils is similar
 attach(all3)
 scatterplotMatrix(~mr+fine+cc+cu+lbr+mc+duw,smoother=F)    # Scatterplot Matrix for Variables
 
